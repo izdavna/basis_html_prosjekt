@@ -13,3 +13,5 @@
 > Tips: Bytt ut dummy-filene i `bootstrap5/` med ekte Bootstrap 5-filer for full funksjonalitet.
 
 ## blue bold text wow
+
+the difference between commit and push is that when you commit, you basically save the changes in the repo, while pushing the changes and repo is basically posting it under your name
