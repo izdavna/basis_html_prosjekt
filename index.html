@@ -1,57 +1,42 @@
-<!doctype html>
-<html lang="no">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Enkelt prosjekt</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Individual project</title>
+  </head>
+  <body>
+     <h1 id="top">welcome to my website</h1>
+     <hr>
+      <script>
+        // here is where the javascript code goes
+        // print a text on the screen
+        document.write("hello world");
+        // and to show a pop-up tile on the screen
+        // alert("hello world")
 
-  <!-- Bootstrap 5 (lokal mappe) -->
-  <link rel="stylesheet" href="js/plugins/bootstrap5/css/bootstrap.min.css" />
+        // a whole calculation process:
+          // var age = prompt("your age");
+          // var result = age * 365;
+          // document.write("you have been alive for" + result + "days");
 
-  <!-- Egen CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <header class="py-4 border-bottom">
-    <div class="container">
-      <h1 class="h3 mb-1">Enkelt prosjekt</h1>
-      <p class="text-muted mb-0">Dummy-oppsett med HTML/CSS + Bootstrap 5</p>
-    </div>
-  </header>
+        // alert(window.innerWidth);
+        // task 1
+        document.write("the width of the window is:" + window.innerWidth);
+        document.write("<br>");
+        // task 2
+        document.write("the height of the window is:" + window.innerHeight + "<br>");
+        // task 3
+        document.write("and it's located at:" + window.location);
 
-  <main class="container py-4">
-    <div class="row g-3">
-      <div class="col-md-8">
-        <div class="p-4 border rounded">
-          <h2 class="h5">Innhold</h2>
-          <p class="mb-0">Dette er en minimal startsid e. Rediger <code>css/style.css</code> og <code>js/app.js</code>.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded bg-light">
-          <h2 class="h6">Rask test</h2>
-          <button id="demoBtn" class="btn btn-primary w-100">Klikk meg</button>
-          <small class="d-block mt-2 text-muted">Se konsollen for JS-melding.</small>
-        </div>
-      </div>
-    </div>
+        // this code will replace the text in h1 with hey-ho
+        document.getElementById("top").innerHTML="hey-ho";
 
-    <hr class="my-4" />
+        console.log("this is a notice of change");
+        console.warn("this is your last warning");
+        console.error("you broke something idk");
 
-    <figure class="mb-0">
-      <img src="images/placeholder.txt" alt="" class="d-none" />
-      <figcaption class="text-muted">Bilder legges i <code>/images</code>.</figcaption>
-    </figure>
-  </main>
-
-  <footer class="py-4 border-top">
-    <div class="container small text-muted">© <span id="year"></span> Enkel prosjektstruktur</div>
-  </footer>
-
-  <!-- Bootstrap 5 (lokal mappe) -->
-  <script src="js/plugins/bootstrap5/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Egen JS -->
-  <script src="js/app.js"></script>
-</body>
+      </script>
+      
+  </body>
 </html>
